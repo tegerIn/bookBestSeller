@@ -1,0 +1,32 @@
+.nav {
+  padding: 35px 30px;
+  border-bottom: 3px dashed rgb(149, 175, 192);
+  background-color: white;
+  font-size: 25px;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  z-index: 10;
+}
+
+.nav a:hover {
+  transform: scale(1.2);
+  color: rgb(47, 53, 66);
+}
+
+.nav a:first-child {
+  position: absolute;
+  top: 21px;
+}
+
+.nav a:last-child {
+  position: absolute;
+  top: 21px;
+  left: 85%;
+}
+
+.clickMenu {
+  background-color: rgb(149, 175, 192);
+  border-radius: 100%;
+}

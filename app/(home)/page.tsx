@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Book from "../../components/book";
+import styles from "../../styles/home.module.css";
 
 export const metadata = {
   title: "Home",
@@ -16,14 +17,10 @@ async function getBookCategory() {
 export default async function HomePage() {
   const category = (await getBookCategory()).results;
   return (
-    <div>
+    <div className={styles.container}>
       <h1>The New York Times Best Seller Explorer</h1>
       {category.map((item) => (
-        <li key={item.list_name}>
-          <Link href={`list/${item.list_name.replaceAll(" ", "-")}`}>
-            {item.list_name}
-          </Link>
-        </li>
+        <Book list_name={item.list_name} />
       ))}
     </div>
   );

@@ -1,0 +1,59 @@
+.book_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-row-gap: 50px;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 2px 2px rgb(149, 175, 192);
+  overflow: hidden;
+}
+
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  flex-grow: 1;
+  padding: 20px 14px;
+}
+
+.textDetail {
+  display: inline-block;
+}
+
+.textDetail p:last-child {
+  font-size: 10px;
+}
+
+.book_list img {
+  width: 200px;
+  height: 270px;
+  transition: opacity 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.cardDetail:hover {
+  opacity: 1;
+}
+
+.book_list a {
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(149, 175, 192);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.book_list a:hover {
+  background-color: rgb(47, 53, 66);
+  color: white;
+}

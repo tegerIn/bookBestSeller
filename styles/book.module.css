@@ -1,0 +1,14 @@
+.book {
+  border: 2px solid rgb(149, 175, 192);
+  padding: 15px;
+  margin: 10px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book:hover {
+  background-color: rgb(149, 175, 192);
+  transform: scale(1.2);
+}
